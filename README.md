@@ -1,4 +1,5 @@
-Scalability of the project refers to our [report](CIS555FinalProjectReport.pdf).
+Scalability of the project refers to our [report](report/CIS555FinalProjectReport.pdf) and one of the screenshots (in [report](report/) as well) is shown as following
+![picture](report/G18-saudi-aramco.png)
 
 Full name:  Feng Xiang, Yezheng Li, Xinyu Ma, Shenqi Hu
 SEAS login: fxiang, yezheng, xinyuma, hshenqi
