@@ -1,0 +1,68 @@
+https://alliance.seas.upenn.edu/~cis455/cgi-bin/submit.php
+
+clear && printf '\e[3J'; mvn compile exec:java  -Dexec.cleanupDaemonThreads=false  -Dexec.mainClass=edu.upenn.cis455.indexer.Indexer -Dexec.args="0 14000 5"
+
+
+clear && printf '\e[3J'; mvn compile exec:java  -Dexec.cleanupDaemonThreads=false  -Dexec.mainClass=edu.upenn.cis455.indexer.IndexerEMR
+
+clear && printf '\e[3J'; mvn compile exec:java  -Dexec.cleanupDaemonThreads=false  -Dexec.mainClass=edu.upenn.cis455.indexer.WordCountEMR -Dexec.args="words.txt output"
+
+
+
+clear && printf '\e[3J'; mvn compile exec:java -Dexec.mainClass=edu.upenn.cis455.indexer.WordCountEMR -Dexec.args="words.txt output"
+
+clear && printf '\e[3J'; mvn clean compile exec:java -Dexec.mainClass="edu.upenn.cis455.frontend.XPathApp" -Dexec.args="dbyezheng"
+
+
+
+clear && printf '\e[3J'; mvn clean compile exec:java@Crawler -Dexec.args="http://crawltest.cis.upenn.edu/ dbyezheng 10 5"
+
+
+
+clear && printf '\e[3J'; mvn clean compile exec:java -Dexec.mainClass="edu.upenn.cis455.crawler.XPathCrawler" -Dexec.args="http://crawltest.cis.upenn.edu/international/ dbyezheng 10"
+
+clear && printf '\e[3J'; mvn test
+s
+git clone ssh://G18@cis455.cis.upenn.edu/git/cis455/G18/ ./G18
+mvn clean  compile exec:java -Dexec.mainClass="edu.upenn.cis455.frontend.XPathApp" -Dexec.args="dbyezheng"
+clear && printf '\e[3J'; mvn clean compile exec:java@StormLiteTestWordCount
+
+
+clear && printf '\e[3J'; mvn clean compile exec:java -Dexec.mainClass="test.edu.upenn.cis.stormlite.TestWordCount" -Dexec.args="http://crawltest.cis.upenn.edu/ dbyezheng 10 5"
+
+clear && printf '\e[3J'; mvn clean compile  exec:java -Dexec.mainClass="edu.upenn.cis.cis455.crawler.Crawler" -Dexec.args="http://crawltest.cis.upenn.edu/international/ dbyezheng 10"
+clear && printf '\e[3J'; mvn clean compile test
+
+clear && printf '\e[3J'; mvn clean compile exec:java@Master
+clear && printf '\e[3J'; mvn clean compile exec:java@Worker
+clear && printf '\e[3J'; mvn clean compile exec:java@TestMapReduce
+clear && printf '\e[3J'; mvn clean compile exec:java -Dexec.mainClass="edu.upenn.cis.stormlite.mapreduce.TestMapReduce"
+clear && printf '\e[3J'; mvn clean compile exec:java -Dexec.mainClass="edu.upenn.cis.stormlite.TestWordCountStreaming"
+
+sudo kill -9 'sudo lsof -t -i:8079';
+sudo kill -9 'sudo lsof -t -i:8083';
+
+
+
+clear && printf '\e[3J';grep -R --include="*.java" "UtilsTest" .
+clear && printf '\e[3J';grep -R --include="*.java" "main(" .
+
+clear && printf '\e[3J';grep -R --include="*.java" "getTextContent(" .
+
+
+
+git config --local --add core.sshCommand 'ssh -i ~/github/id_rsa'
+
+
+curl localhost:8080
+curl I --head localhost:8080
+
+ab -l -n 100 -c 10 "localhost:8081/upenn_.jpg"
+ab -l -n 100 -c 10 "localhost:8081/index_.html"
+
+
+# HW1MS2
+yezheng: I have not written filter!!
+
+#HW2MS2
+localhost:8080/create?name=yezheng

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+<style>
+body {
+  font-family: Arial;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  resize: both;
+  overflow: auto;
+  margin-top: 10%
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 16px 0px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form {
+  width: 50%;
+  text-align: center;
+}
+
+.flex-container > div {
+  width: 200px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  font-family: 'Abel';
+  color: gray;
+}
+
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div>G18 Search</div>
+  <form action="/redirect" method="POST">
+      <input type="text" id="query" name="query">
+      <input type="submit" value="Search">
+  </form>
+</div>
+</body>
+</html>
