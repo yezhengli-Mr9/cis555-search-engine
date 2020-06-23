@@ -50,5 +50,5 @@ Did you collaborate with anyone on this assignment?
 
 -----
 
-one of the screenshots (in [report](report/) as well) is shown as following
+One of the screenshots (all saved screenshots are in [report](report/) as well) is shown as following
 ![picture](report/G18-saudi-aramco.png)
