@@ -1,4 +1,4 @@
-While details of scalability (of the project) can be found via our [report](report/CIS555FinalProjectReport.pdf), 
+While details of scalability (of the project) can be found in our [final report](report/CIS555FinalProjectReport.pdf), 
 
 (1) we crawled ```4*10^5``` urls with 200GB data stored on AWS S3.
 
