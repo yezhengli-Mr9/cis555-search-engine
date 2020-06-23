@@ -1,5 +1,10 @@
-Scalability of the project refers to our [report](report/CIS555FinalProjectReport.pdf) and one of the screenshots (in [report](report/) as well) is shown as following
-![picture](report/G18-saudi-aramco.png)
+While details of scalability (of the project) can be found via our [report](report/CIS555FinalProjectReport.pdf), 
+
+(1) we crawled ```4*10^5``` urls,200GB AWS S3)
+
+(2) indexer is saved on AWS RDS mysql wih 35-70GB storage.
+
+--------
 
 Full name:  Feng Xiang, Yezheng Li, Xinyu Ma, Shenqi Hu
 
@@ -41,3 +46,9 @@ Did you collaborate with anyone on this assignment?
   [ ] Yes
   
   [x] No
+
+
+-----
+
+one of the screenshots (in [report](report/) as well) is shown as following
+![picture](report/G18-saudi-aramco.png)
