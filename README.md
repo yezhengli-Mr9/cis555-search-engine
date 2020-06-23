@@ -1,8 +1,8 @@
 While details of scalability (of the project) can be found via our [report](report/CIS555FinalProjectReport.pdf), 
 
-(1) we crawled ```4*10^5``` urls,200GB AWS S3)
+(1) we crawled ```4*10^5``` urls with 200GB data stored on AWS S3.
 
-(2) indexer is saved on AWS RDS mysql wih 35-70GB storage.
+(2) indexer is on AWS RDS mysql wih 35-70GB invertedIndex (as well as tf-idf scores, summary statistics etc.).
 
 --------
 
