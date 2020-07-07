@@ -1,4 +1,12 @@
-This project builds a functional web search engine that incorporates what we have learned in CIS555. To achieve this aim, we have the following goals in mind: a) Our system is able to crawl a large corpus of web documents. (4*10^5 urls,200GB AWS S3) b) Our system can process large amounts of data efficiently. c) Our system can return accurate and meaningful results based on user search query. d) Our system is robust and can be deployed on the cloud as a real product.
+This project builds a functional web search engine that incorporates what we have learned in CIS555. To achieve this aim, we have the following goals in mind: 
+
+a) Our system is able to crawl a large corpus of web documents. (4*10^5 urls,200GB AWS S3) 
+
+b) Our system can process large amounts of data efficiently. 
+
+c) Our system can return accurate and meaningful results based on user search query. 
+
+d) Our system is robust and can be deployed on the cloud as a real product.
 
 --------
 While details of scalability (of the project) can be found in our [final report](report/CIS555FinalProjectReport.pdf), 
